@@ -55,15 +55,23 @@ Supports KPIs, dashboards, and reporting use cases.
 ### 📂 Project Structure
 Databricks ETL Project
 │── Bronze-Layer.python        # Raw data ingestion (Delta tables)
+
 │── Silver-Customers.python    # Customer transformations
+
 │── Silver-Orders.python       # Order transformations
+
 │── Silver-Products.python     # Product transformations
+
 │── Silver-Regions.python      # Region transformations
+
 │── Gold-Customers.python      # Final curated customers table
+
 │── Gold-Orders.python         # Final curated orders table
+
 │── Gold-Products.python       # Final curated products table
+
 │── parameters.python          # Configurations & metadata
-│── manifest.mf                # Notebook export manifest
+
 
 ### ⚙️ Technologies Used
 
