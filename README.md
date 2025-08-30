@@ -120,6 +120,34 @@ Run Gold-layer notebooks to publish curated data.
 Use BI tools (Power BI, Tableau) for analytics.
 
 
+### ⏱️ Job Scheduling & Orchestration
+
+<img width="1136" height="562" alt="image" src="https://github.com/user-attachments/assets/3f92ccb0-c21b-4c0a-99cc-a0e13a3b6640" />
+
+
+The entire ETL pipeline is orchestrated using Databricks Jobs, ensuring reliable, automated execution of Bronze → Silver → Gold workflows.
+
+Job Workflow:
+
+Bronze Ingestion runs first to load raw data from ADLS into Delta tables.
+
+Silver Layer notebooks (Customers, Orders, Products) transform and clean the data.
+
+Gold Layer notebooks (Customers, Products, Orders) aggregate and publish business-ready tables.
+
+Scheduling: Jobs can be triggered manually or scheduled at defined intervals (hourly/daily/weekly).
+
+Monitoring:
+
+Job runs tracked with lineage visualization (upstream/downstream dependencies).
+
+Automatic retries on failures.
+
+Run history available for auditing and debugging.
+
+Result: Automated, dependency-aware job orchestration that ensures each layer is executed in sequence with full data lineage tracking.
+
+
 
 ### 📊 Business Impact
 
